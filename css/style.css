@@ -1,4 +1,4 @@
-/* Reset básico e fontes */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,8 +8,6 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
-/* Limita a largura e centraliza o conteúdo */
 header, nav, main, footer {
     max-width: 960px;
     margin: 0 auto;
@@ -17,43 +15,38 @@ header, nav, main, footer {
 }
 
 header {
-    /* Mantenha o background-image (estádio + sobreposição verde) */
+  
     background-image: 
         linear-gradient(rgba(0, 90, 49, 0.85), rgba(0, 90, 49, 0.85)),
-        url('../img/header-bg.jpg'); /* Verifique o nome do arquivo da sua imagem */
+        url('../img/header-bg.jpg'); 
     background-size: cover;
     background-position: center;
-
-    color: white; /* Cor do texto */
-    padding: 3rem 1rem; /* Espaçamento interno. Ajuste o 3rem se quiser mais/menos altura */
-
-    /* Centraliza o conteúdo (header-content) verticalmente */
+    color: white; 
+    padding: 3rem 1rem; 
     display: flex; 
     align-items: center; 
-
-    /* Ajusta o texto para ir para o canto esquerdo da "caixa" do header */
     text-align: left; 
 }
 
-/* Ajusta a largura e centraliza o bloco de texto dentro do header */
+
 .header-content {
-    max-width: 960px; /* Mesma largura do main para centralizar */
-    margin: 0 auto;   /* Centraliza o bloco de texto na página */
-    width: 100%;      /* Faz o bloco de texto ocupar 100% da sua max-width */
-    padding-left: 1rem; /* Um pouco de espaço da margem esquerda real do navegador */
+    max-width: 960px; 
+    margin: 0 auto;  
+    width: 100%;      
+    padding-left: 1rem; 
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.8em; /* Tamanho maior para o título principal */
+    font-size: 2.8em; 
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra mais forte para destaque */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
 }
 
 header p {
     margin: 0.5rem 0 0 0;
-    font-size: 1.2em; /* Tamanho do subtítulo */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra para o subtítulo */
+    font-size: 1.2em; 
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); 
 }
 
 nav {
@@ -86,7 +79,7 @@ nav ul li a:hover {
     transform: translateY(-5px); 
 }
 
-/* --- Conteúdo Principal --- */
+
 main {
     background-color: white;
     padding: 2rem;
@@ -99,7 +92,6 @@ main h2 {
     padding-bottom: 5px;
 }
 
-/* --- Destaques da Home --- */
 .destaques {
     display: flex;
     justify-content: space-between;
@@ -125,7 +117,6 @@ main h2 {
     transition: transform 0.3s ease;
 }
 
-/* --- Formulário de Contato --- */
 form div {
     margin-bottom: 15px;
 }
@@ -160,7 +151,7 @@ form button:hover {
     background-color: #004a28;
 }
 
-/* --- Rodapé --- */
+
 footer {
     text-align: center;
     margin-top: 2rem;
@@ -169,7 +160,6 @@ footer {
     padding-top: 1.5rem;
 }
 
-/* --- Efeito Hover nos Cards de Destaque --- */
 
 .destaque-item:hover {
     transform: translateY(-10px); 
